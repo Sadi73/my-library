@@ -1,0 +1,84 @@
+#loaderModal {
+    /* position: absolute;
+top: 38%;
+left: 36%; */
+    margin: auto;
+    padding-top: 19%;
+}
+
+.loaderHolder {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    /* border-bottom: 1px solid rgba(190, 188, 192, 0.959) */
+}
+
+#loaderMother {
+    display: grid;
+    color: #000;
+}
+
+.loaderText {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.loader {
+    width: 450px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader div {
+    width: 25px;
+    height: 25px;
+    background-color: #e8f6ff;
+    animation: salto 1s alternate infinite;
+}
+
+.loader div:nth-child(2) {
+    animation-delay: 0.20s;
+}
+
+.loader div:nth-child(3) {
+    animation-delay: 0.40s;
+}
+
+.loader div:nth-child(4) {
+    animation-delay: 0.60s;
+}
+
+.loader div:nth-child(5) {
+    animation-delay: 0.80s;
+}
+
+.loader div:nth-child(6) {
+    animation-delay: 1.00s;
+}
+
+.loader div:nth-child(7) {
+    animation-delay: 1.20s;
+}
+
+@keyframes salto {
+    0% {
+        background-color: #012B48;
+    }
+
+    50% {
+        background-color: #59B1EE;
+    }
+
+    100% {
+        background-color: #e8f6ff;
+    }
+}
