@@ -10,7 +10,7 @@ const LoaderRoot = () => {
                 <Loader activateLoader={activateLoader} />
             }
 
-            <div onClick={() => setActivateLoader(true)}>Open Loader</div>
+            <button className='bg-sky-500 p-3 text-white' onClick={() => setActivateLoader(true)}>Open Loader</button>
 
         </div>
     );

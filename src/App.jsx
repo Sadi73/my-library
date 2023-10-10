@@ -10,6 +10,7 @@ import SuccessModalRoot from "./Test Components/Modals/SuccessModal/SuccessModal
 import Tab1 from "./Test Components/Tabs/Tab1"
 import Tab2 from "./Test Components/Tabs/Tab2"
 import LoaderRoot from "./Test Components/Loader/LoaderRoot"
+import ProgressBarRoot from "./Test Components/ProgressBar/ProgressBarRoot"
 
 
 function App() {
@@ -22,12 +23,48 @@ function App() {
       {/* <Checkbox/> */}
       {/* <Radio/> */}
       {/* <Form_practice/> */}
-      {/* <Accordion /> */}
-      {/* <ModalRoot/> */}
-      {/* <SuccessModalRoot /> */}
-      {/* <Tab1/> */}
-      {/* <Tab2/> */}
-      <LoaderRoot/>
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Accordion</h1>
+        <Accordion />
+        <hr />
+      </div>
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Modal</h1>
+        <ModalRoot />
+        <hr />
+      </div>
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">SuccessModal</h1>
+        <SuccessModalRoot />
+        <hr />
+      </div>
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Tab 1</h1>
+        <Tab1 />
+        <hr />
+      </div>
+
+      <div className="my-10">
+        <h2 className="text-center text-xl font-bold">Tab 2</h2>
+        <Tab2 />
+        <hr />
+      </div>
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Loader</h1>
+        <LoaderRoot />
+        <hr />
+      </div>
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Progress Bar</h1>
+        <ProgressBarRoot />
+      </div>
+
+
+
 
     </div>
   )

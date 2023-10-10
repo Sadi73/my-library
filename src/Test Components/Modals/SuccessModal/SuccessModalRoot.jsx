@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SuccessModal from './SuccessModal';
 
 const SuccessModalRoot = () => {
@@ -13,7 +13,7 @@ const SuccessModalRoot = () => {
                     message={'Successful'}
                 />
             }
-            <button onClick={() => setSuccessModalVisible(true)}>Open Modal</button>
+            <button className='bg-sky-500 p-3 text-white' onClick={() => setSuccessModalVisible(true)}>Open Success Modal</button>
 
         </div>
     );

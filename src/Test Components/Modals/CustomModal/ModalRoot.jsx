@@ -12,7 +12,7 @@ const ModalRoot = () => {
                     <CustomModalBody>Modal Body</CustomModalBody>
                 </CustomModal>
             }
-            <button onClick={() => setModalVisible(true)}>Open Modal</button>
+            <button className='bg-sky-500 p-3 text-white' onClick={() => setModalVisible(true)}>Open Modal</button>
 
         </div>
     );

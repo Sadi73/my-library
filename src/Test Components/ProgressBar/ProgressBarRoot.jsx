@@ -8,10 +8,10 @@ const ProgressBarRoot = () => {
         <div>
             {
                 progressBarVisible && 
-                <ProgressBar value='20%' backgroundColor='red'/>
+                <ProgressBar value='75%' backgroundColor='green'/>
             }
 
-            <button onClick={() => setProgressBarVisible(true)}>Open ProgressBar</button>
+            <button className='bg-sky-500 p-3 text-white' onClick={() => setProgressBarVisible(!progressBarVisible)}>Open ProgressBar</button>
 
         </div>
     );

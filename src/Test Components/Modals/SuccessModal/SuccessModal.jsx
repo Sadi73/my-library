@@ -4,9 +4,10 @@ import { CustomModal, CustomModalBody } from '../CustomModal/CustomModal';
 import OkIcon from '../../../assets/OkIcon.svg'
 
 const SuccessModal = (props) => {
+  // ------ For Auto Close After 2 Second--------
     useEffect(() => {
         setTimeout(() => {
-          props.actionOnSuccessModal();
+          props.setModalVisible(false);
         }, 2000);
       }, []);
     

@@ -413,7 +413,7 @@ const Accordion = () => {
                                 <div onClick={() => {
                                     toggleDept(deptIndex);
                                 }}>
-                                    <img src={ExpandIcon} style={{ transform: deptIndex === sectionIndex && 'rotate(180deg)' }} alt='img' />
+                                    <img src={ExpandIcon} style={{ transform: deptIndex === sectionIndex && 'rotate(180deg)', transition: 'transform 0.3s ease' }} alt='img' />
                                 </div>
 
                             </div>
