@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import ExpandIcon from '../assets/Expand.svg'
+import ExpandIcon from '../../assets/Expand.svg'
 
 const Accordion = () => {
     const [info, setInfo] = useState({

@@ -1,5 +1,4 @@
 import { useState } from "react"
-import Accordion from "./Test Components/Accordion"
 import Checkbox from "./Test Components/Checkbox"
 import Form_practice from "./Test Components/Form_practice"
 import Radio from "./Test Components/Radio"
@@ -11,6 +10,10 @@ import Tab1 from "./Test Components/Tabs/Tab1"
 import Tab2 from "./Test Components/Tabs/Tab2"
 import LoaderRoot from "./Test Components/Loader/LoaderRoot"
 import ProgressBarRoot from "./Test Components/ProgressBar/ProgressBarRoot"
+import RatingRoot from "./Test Components/Rating/RatingRoot"
+import RatingCheckbox from "./Test Components/Rating/RatingCheckbox"
+import DateFieldRoot from "./Test Components/DateField/DateFieldRoot"
+import Accordion from "./Test Components/Accordion/Accordion"
 
 
 function App() {
@@ -23,6 +26,7 @@ function App() {
       {/* <Checkbox/> */}
       {/* <Radio/> */}
       {/* <Form_practice/> */}
+
       <div className="my-10">
         <h1 className="text-center text-xl font-bold">Accordion</h1>
         <Accordion />
@@ -52,6 +56,7 @@ function App() {
         <Tab2 />
         <hr />
       </div>
+
       <div className="my-10">
         <h1 className="text-center text-xl font-bold">Loader</h1>
         <LoaderRoot />
@@ -63,10 +68,20 @@ function App() {
         <ProgressBarRoot />
       </div>
 
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Number Rating</h1>
+        <RatingRoot />
+      </div>
 
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Date Field</h1>
+        <DateFieldRoot />
+      </div>
+      {/* <RatingCheckbox/> */}
 
 
     </div>
+
   )
 }
 

@@ -1,0 +1,31 @@
+.not-selected {
+    background-color: rgb(182, 182, 175);
+    padding: 5px;
+}
+
+.selected-red {
+    background-color: #EC4747;
+    padding: 5px;
+}
+
+.selected-yellow {
+    background-color: #F2994A;
+    padding: 5px;
+}
+
+.selected-green {
+    background-color: #0D9344;
+    padding: 5px;
+}
+
+/* Style the radio input itself */
+input[type="radio"] {
+    /* Your desired styles here */
+    background-color: red; /* Change the background color to red */
+    border: 2px solid rgb(255, 0, 106); /* Change the border color to blue */
+  }
+  
+  /* Style the label associated with the radio input */
+  label[for="myRadio"] {
+    color: green; /* Change the label text color to green */
+  }
