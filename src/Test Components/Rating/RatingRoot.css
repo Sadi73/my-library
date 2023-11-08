@@ -18,14 +18,3 @@
     padding: 5px;
 }
 
-/* Style the radio input itself */
-input[type="radio"] {
-    /* Your desired styles here */
-    background-color: red; /* Change the background color to red */
-    border: 2px solid rgb(255, 0, 106); /* Change the border color to blue */
-  }
-  
-  /* Style the label associated with the radio input */
-  label[for="myRadio"] {
-    color: green; /* Change the label text color to green */
-  }

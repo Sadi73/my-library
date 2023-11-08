@@ -11,9 +11,11 @@ import Tab2 from "./Test Components/Tabs/Tab2"
 import LoaderRoot from "./Test Components/Loader/LoaderRoot"
 import ProgressBarRoot from "./Test Components/ProgressBar/ProgressBarRoot"
 import RatingRoot from "./Test Components/Rating/RatingRoot"
-import RatingCheckbox from "./Test Components/Rating/RatingCheckbox"
 import DateFieldRoot from "./Test Components/DateField/DateFieldRoot"
 import Accordion from "./Test Components/Accordion/Accordion"
+import SwitchRoot from "./Test Components/ToggleSwitch/SwitchRoot"
+import ShowInputImage from "./Test Components/Inputs/ShowInputImage"
+import CustomRadioInput from "./Test Components/Inputs/CustomRadioInput"
 
 
 function App() {
@@ -21,16 +23,11 @@ function App() {
   return (
     <div className="w-1/2 mx-auto">
       <h1 className="text-yellow-500 text-center font-bold">Welcome</h1>
-      {/* <Select/> */}
-      {/* <Select_Test /> */}
-      {/* <Checkbox/> */}
-      {/* <Radio/> */}
-      {/* <Form_practice/> */}
 
       <div className="my-10">
         <h1 className="text-center text-xl font-bold">Accordion</h1>
         <Accordion />
-        <hr />
+        <hr /> 
       </div>
 
       <div className="my-10">
@@ -76,9 +73,29 @@ function App() {
       <div className="my-10">
         <h1 className="text-center text-xl font-bold">Date Field</h1>
         <DateFieldRoot />
-      </div>
-      {/* <RatingCheckbox/> */}
+      </div> 
 
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Toggle Switch</h1>
+        <SwitchRoot/>
+      </div> 
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Input Image</h1>
+        <ShowInputImage/>
+      </div> 
+
+      <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Radio input Custom Style</h1>
+        <CustomRadioInput/>
+      </div> 
+      
+     
+     
+
+      
+
+      
 
     </div>
 
