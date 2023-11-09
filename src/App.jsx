@@ -1,9 +1,4 @@
-import { useState } from "react"
-import Checkbox from "./Test Components/Checkbox"
-import Form_practice from "./Test Components/Form_practice"
-import Radio from "./Test Components/Radio"
-import Select from "./Test Components/Select"
-import Select_Test from "./Test Components/Select_Test"
+
 import ModalRoot from "./Test Components/Modals/CustomModal/ModalRoot"
 import SuccessModalRoot from "./Test Components/Modals/SuccessModal/SuccessModalRoot"
 import Tab1 from "./Test Components/Tabs/Tab1"
@@ -16,6 +11,7 @@ import Accordion from "./Test Components/Accordion/Accordion"
 import SwitchRoot from "./Test Components/ToggleSwitch/SwitchRoot"
 import ShowInputImage from "./Test Components/Inputs/ShowInputImage"
 import CustomRadioInput from "./Test Components/Inputs/CustomRadioInput"
+import AddMore from "./Test Components/Inputs/AddMore"
 
 
 function App() {
@@ -24,78 +20,106 @@ function App() {
     <div className="w-1/2 mx-auto">
       <h1 className="text-yellow-500 text-center font-bold">Welcome</h1>
 
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Accordion</h1>
-        <Accordion />
-        <hr /> 
-      </div>
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Modal</h1>
-        <ModalRoot />
+      <div>
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Accordion</h1>
+          <Accordion />
+        </div>
         <hr />
-      </div>
 
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">SuccessModal</h1>
-        <SuccessModalRoot />
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Modal</h1>
+          <ModalRoot />
+        </div>
         <hr />
-      </div>
 
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Tab 1</h1>
-        <Tab1 />
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">SuccessModal</h1>
+          <SuccessModalRoot />
+        </div>
         <hr />
-      </div>
 
-      <div className="my-10">
-        <h2 className="text-center text-xl font-bold">Tab 2</h2>
-        <Tab2 />
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Tab 1</h1>
+          <Tab1 />
+        </div>
         <hr />
-      </div>
 
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Loader</h1>
-        <LoaderRoot />
+        <div className="my-10">
+          <h2 className="text-center text-xl font-bold">Tab 2</h2>
+          <Tab2 />
+        </div>
         <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Loader</h1>
+          <LoaderRoot />
+        </div>
+        <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Progress Bar</h1>
+          <ProgressBarRoot />
+        </div>
+        <hr />
+
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Number Rating</h1>
+          <RatingRoot />
+        </div>
+        <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Date Field</h1>
+          <DateFieldRoot />
+        </div>
+        <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Toggle Switch</h1>
+          <SwitchRoot />
+        </div>
+        <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Input Image</h1>
+          <ShowInputImage />
+        </div>
+        <hr />
+
+        <div className="my-10">
+          <h1 className="text-center text-xl font-bold">Radio input Custom Style</h1>
+          <CustomRadioInput />
+        </div>
+        <hr />
+
+
+        <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Add More</h1>
+        <AddMore />
+      </div>
+      <hr />
+
       </div>
 
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Progress Bar</h1>
-        <ProgressBarRoot />
+      {/* <div className="my-10">
+        <h1 className="text-center text-xl font-bold">Add More</h1>
+        <AddMore />
       </div>
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Number Rating</h1>
-        <RatingRoot />
-      </div>
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Date Field</h1>
-        <DateFieldRoot />
-      </div> 
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Toggle Switch</h1>
-        <SwitchRoot/>
-      </div> 
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Input Image</h1>
-        <ShowInputImage/>
-      </div> 
-
-      <div className="my-10">
-        <h1 className="text-center text-xl font-bold">Radio input Custom Style</h1>
-        <CustomRadioInput/>
-      </div> 
+      <hr /> 
+    
       
-     
-     
+      */}
 
-      
 
-      
+
+
+
+
+
+
+
 
     </div>
 
