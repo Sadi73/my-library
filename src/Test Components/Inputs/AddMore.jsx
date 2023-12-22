@@ -11,7 +11,7 @@ const AddMore = () => {
 
     })
 
-    console.log(values)
+    // console.log(values)
 
     return (
         <div>
