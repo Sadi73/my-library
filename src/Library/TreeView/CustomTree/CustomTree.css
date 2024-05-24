@@ -2,11 +2,13 @@
 	/* width: 100%; */
 	/* height: auto; */
 	text-align: center;
+	overflow-x: auto;
 }
 .tree1 ul {
 	padding-top: 20px;
 	position: relative;
 	transition: .5s;
+	white-space: nowrap;
 }
 .tree1 li {
 	display: inline-table;

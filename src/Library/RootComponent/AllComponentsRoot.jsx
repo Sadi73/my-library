@@ -18,7 +18,7 @@ import CustomTree from '../TreeView/CustomTree/CustomTree';
 
 const AllComponentsRoot = () => {
     return (
-        <div className="library w-3/4 px-16">
+        <div className="library w-3/4">
             <div className="my-10">
                 <h1 className="text-center text-xl font-bold">Accordion</h1>
                 <Accordion />
@@ -99,25 +99,28 @@ const AllComponentsRoot = () => {
             </div>
             <hr />
 
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
-                <TreeBeard />
+            {/* -----------------------TREE STRUCTURE--------------------------- */}
+            <div className='tree-structure'>
+                <div className="my-10">
+                    <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
+                    <TreeBeard />
+                </div>
+                <hr />
+
+                <div className="my-10">
+                    <h1 className="text-center text-xl font-bold">Tree View - Not Clickable </h1>
+                    <TreeView />
+                </div>
+
+                <hr />
+
+                <div className="my-10">
+                    <h1 className="text-center text-xl font-bold">Tree View - Clickable </h1>
+                    <CustomTree />
+                </div>
+                <hr />
+
             </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Tree View </h1>
-                <TreeView />
-            </div>
-
-            <hr/>
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
-                <CustomTree />
-            </div>
-            <hr />
-
 
 
         </div>
