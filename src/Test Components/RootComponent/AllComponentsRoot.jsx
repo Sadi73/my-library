@@ -12,7 +12,9 @@ import SwitchRoot from '../ToggleSwitch/SwitchRoot';
 import ShowInputImage from '../Inputs/ShowInputImage';
 import CustomRadioInput from '../Inputs/CustomRadioInput';
 import AddMore from '../Inputs/AddMore';
-import { Form } from 'formik';
+import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
+import TreeView from '../TreeView/Treeview/TreeView';
+import CustomTree from '../TreeView/CustomTree/CustomTree';
 
 const AllComponentsRoot = () => {
     return (
@@ -97,11 +99,24 @@ const AllComponentsRoot = () => {
             </div>
             <hr />
 
-            {/* <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Add More</h1>
-                <Form />
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
+                <TreeBeard />
             </div>
-            <hr /> */}
+            <hr />
+
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold">Tree View </h1>
+                <TreeView />
+            </div>
+
+            <hr/>
+
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
+                <CustomTree />
+            </div>
+            <hr />
 
 
 
