@@ -1,7 +1,7 @@
 
 
-import AllComponentsRoot from "./Test Components/RootComponent/AllComponentsRoot"
-import SideBar from "./Test Components/RootComponent/SideBar"
+import AllComponentsRoot from "./Library/RootComponent/AllComponentsRoot"
+import SideBar from "./Library/RootComponent/SideBar"
 
 
 function App() {
