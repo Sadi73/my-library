@@ -18,7 +18,7 @@ import CustomTree from '../TreeView/CustomTree/CustomTree';
 
 const AllComponentsRoot = () => {
     return (
-        <div className="library w-3/4">
+        <div className="library">
             <div className="my-10">
                 <h1 className="text-center text-xl font-bold">Accordion</h1>
                 <Accordion />

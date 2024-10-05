@@ -1,25 +1,27 @@
 
 
 import AllComponentsRoot from "./Library/RootComponent/AllComponentsRoot"
-import SideBar from "./Library/RootComponent/SideBar"
-
+import LeftSideBar from "./Library/RootComponent/LeftSideBar"
+import RightSideBar from "./Library/RootComponent/RightSideBar"
 
 function App() {
 
   return (
-    <div className="w-10/12 mx-auto">
-      <h1 className="text-yellow-500 text-center font-bold">Welcome</h1>
+    <div className="grid grid-cols-12 gap-6">
 
-      {/* -------------------------Container-------------------------------- */}
-      <div className="Container flex gap-6">
+      <div className="col-span-2">
+        <LeftSideBar />
+      </div>
 
-        {/*   Main Section   */}
-        <AllComponentsRoot/>
+      {/*   Main Section   */}
+      <div className="col-span-7 px-10">
+        <AllComponentsRoot />
+      </div>
 
 
-        {/*   Side Bar   */}
-        <SideBar/>
-
+      {/*   Side Bar   */}
+      <div className="col-span-3">
+        <RightSideBar />
       </div>
 
     </div>
