@@ -41,6 +41,24 @@ const RightSideBar = () => {
                     </li>
                 </ul>
             </div>
+
+            <div>
+                <h1 className='text-xl font-bold text-center'>Animation Packages</h1>
+                <ul className="text-blue-700 list-disc pl-5 font-light space-y-1">
+                    <li>
+                        <a href="https://animate.style/" target="_blank">Text Animation (animate.css)</a>
+                    </li>
+                    <li>
+                        <a href="https://michalsnik.github.io/aos/" target="_blank">Animation on Scroll (AOS)</a>
+                    </li>
+                    <li>
+                        <a href="https://www.framer.com/motion/" target="_blank">Framer Motion</a>
+                    </li>
+                    <li>
+                        <a href="https://react-spring.dev/" target="_blank">React Spring</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     );
 };
