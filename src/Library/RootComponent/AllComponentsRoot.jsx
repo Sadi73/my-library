@@ -15,6 +15,7 @@ import AddMore from '../Inputs/AddMore';
 import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
 import CustomTree from '../TreeView/CustomTree/CustomTree';
+import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
 
 const AllComponentsRoot = () => {
     return (
@@ -122,7 +123,10 @@ const AllComponentsRoot = () => {
 
             </div>
 
-
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold">Responsive Menu</h1>
+                <BasicDrawer />
+            </div>
         </div>
     );
 };
