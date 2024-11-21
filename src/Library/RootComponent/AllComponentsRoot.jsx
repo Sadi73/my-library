@@ -16,6 +16,7 @@ import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
 import CustomTree from '../TreeView/CustomTree/CustomTree';
 import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
+import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 
 const AllComponentsRoot = () => {
     return (
@@ -126,6 +127,11 @@ const AllComponentsRoot = () => {
             <div className="my-10">
                 <h1 className="text-center text-xl font-bold">Responsive Menu</h1>
                 <BasicDrawer />
+            </div>
+
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold mb-10">Mini Variant Drawer</h1>
+                <MiniVariantDrawer />
             </div>
         </div>
     );
