@@ -3,7 +3,7 @@ import React from 'react';
 const LeftSideBar = () => {
     return (
         <div className="sideBar h-[90vh] border-r-2 rounded p-5 sticky top-10 space-y-3">
-            <h1 className='text-xl font-bold text-center'>Component List</h1>
+            <h1 className='lg:text-xl font-bold text-center'>Component List</h1>
             <p className='font-light'>Accordion</p>
             <p className='font-light'>Modal</p>
             <p className='font-light'>Success Modal</p>

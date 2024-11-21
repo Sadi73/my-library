@@ -15,6 +15,9 @@ const RightSideBar = () => {
                     <li>
                         <a href="https://www.youtube.com/playlist?list=PLwJhhWUZudKp7QPVALB_kXUyzj8cBB__L" target="_blank">Background Tutorials</a>
                     </li>
+                    <li>
+                        <a href="https://www.transparenttextures.com/" target="_blank">Background Texture</a>
+                    </li>
                 </ul>
             </div>
 

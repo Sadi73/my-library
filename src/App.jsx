@@ -7,7 +7,7 @@ import RightSideBar from "./Library/RootComponent/RightSideBar"
 function App() {
 
   return (
-    <div className="grid grid-cols-12 gap-6">
+    <div className="md:grid grid-cols-12 gap-6">
 
       <div className="col-span-2">
         <LeftSideBar />
