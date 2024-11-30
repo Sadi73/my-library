@@ -17,6 +17,7 @@ import TreeView from '../TreeView/Treeview/TreeView';
 import CustomTree from '../TreeView/CustomTree/CustomTree';
 import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
 import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
+import Calendar from '../Calendar/Calendar';
 
 const AllComponentsRoot = () => {
     return (
@@ -101,7 +102,6 @@ const AllComponentsRoot = () => {
             </div>
             <hr />
 
-            {/* -----------------------TREE STRUCTURE--------------------------- */}
             <div className='tree-structure'>
                 <div className="my-10">
                     <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
@@ -132,6 +132,11 @@ const AllComponentsRoot = () => {
             <div className="my-10">
                 <h1 className="text-center text-xl font-bold mb-10">Mini Variant Drawer</h1>
                 <MiniVariantDrawer />
+            </div>
+
+            <div className="my-10">
+                <h1 className="text-center text-xl font-bold">Calendar</h1>
+                <Calendar />
             </div>
         </div>
     );
