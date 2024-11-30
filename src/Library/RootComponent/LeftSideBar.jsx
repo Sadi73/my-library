@@ -17,6 +17,8 @@ const LeftSideBar = () => {
             <p className='font-light'>Custom Radio Input</p>
             <p className='font-light'>Add More Input</p>
             <p className='font-light'>Tree Structure</p>
+            <p className='font-light'>Drawers</p>
+            <p className='font-light'>Calendar</p>
         </div>
     );
 };

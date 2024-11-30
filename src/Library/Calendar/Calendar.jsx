@@ -21,8 +21,6 @@ const getCalendarData = (year, month) => {
         isNextPrevMonth: 'prev',
     }));
 
-    console.log(prevMonthDates)
-
     // Fill empty spaces at the end with days from the next month
     const nextMonthDays = Array.from({ length: 6 - lastDayOfMonth }, (_, i) => ({
         date: i + 1,
