@@ -18,9 +18,11 @@ import CustomTree from '../TreeView/CustomTree/CustomTree';
 import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
 import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 import Calendar from '../Calendar/Calendar';
+import { AccordionCodeSnippet } from '../../utils/AccordionCode';
+import ShowCodeContainer from '../../NecessaryComponents/ShowCodeContainer';
 
 const allComponents = [
-    { id: 1, title: 'Accordion', component: <Accordion /> },
+    { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
     { id: 2, title: 'Modal', component: <ModalRoot /> },
     { id: 3, title: 'SuccessModal', component: <SuccessModalRoot /> },
     { id: 4, title: 'Tab 1', component: <Tab1 /> },
@@ -46,8 +48,11 @@ const AllComponentsRoot = () => {
         <div className="library">
             {allComponents.map(eachComponent =>
                 <div className="border rounded-lg my-10 px-10 py-5">
-                    <h1 className="text-center text-xl font-bold mb-5">{eachComponent?.title}</h1>
-                    {eachComponent?.component}
+                    <div>
+                        <h1 className="text-center text-xl font-bold mb-5">{eachComponent?.title}</h1>
+                        {eachComponent?.component}
+                    </div>
+                    <ShowCodeContainer codeSnippet={eachComponent?.codeSnippet} />
                 </div>
             )}
         </div>
