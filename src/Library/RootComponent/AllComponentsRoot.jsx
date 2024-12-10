@@ -19,125 +19,37 @@ import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
 import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 import Calendar from '../Calendar/Calendar';
 
+const allComponents = [
+    { id: 1, title: 'Accordion', component: <Accordion /> },
+    { id: 2, title: 'Modal', component: <ModalRoot /> },
+    { id: 3, title: 'SuccessModal', component: <SuccessModalRoot /> },
+    { id: 4, title: 'Tab 1', component: <Tab1 /> },
+    { id: 5, title: 'Tab 2', component: <Tab2 /> },
+    { id: 6, title: 'Loader', component: <LoaderRoot /> },
+    { id: 7, title: 'Progress Bar', component: <ProgressBarRoot /> },
+    { id: 8, title: 'Number Rating', component: <RatingRoot /> },
+    { id: 9, title: 'Date Field', component: <DateFieldRoot /> },
+    { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
+    { id: 11, title: 'Input Image', component: <ShowInputImage /> },
+    { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput /> },
+    { id: 13, title: 'Add More', component: <AddMore /> },
+    { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
+    { id: 15, title: 'Tree View - Not Clickable', component: <TreeView /> },
+    { id: 16, title: 'Tree View - Clickable', component: <CustomTree /> },
+    { id: 17, title: 'Responsive Menu', component: <BasicDrawer /> },
+    { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer /> },
+    { id: 19, title: 'Calendar', component: <Calendar /> },
+]
+
 const AllComponentsRoot = () => {
     return (
         <div className="library">
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Accordion</h1>
-                <Accordion />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Modal</h1>
-                <ModalRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">SuccessModal</h1>
-                <SuccessModalRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Tab 1</h1>
-                <Tab1 />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h2 className="text-center text-xl font-bold">Tab 2</h2>
-                <Tab2 />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Loader</h1>
-                <LoaderRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Progress Bar</h1>
-                <ProgressBarRoot />
-            </div>
-            <hr />
-
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Number Rating</h1>
-                <RatingRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Date Field</h1>
-                <DateFieldRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Toggle Switch</h1>
-                <SwitchRoot />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Input Image</h1>
-                <ShowInputImage />
-            </div>
-            <hr />
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Radio input Custom Style</h1>
-                <CustomRadioInput />
-            </div>
-            <hr />
-
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Add More</h1>
-                <AddMore />
-            </div>
-            <hr />
-
-            <div className='tree-structure'>
-                <div className="my-10">
-                    <h1 className="text-center text-xl font-bold">Tree View (Tree Beard)</h1>
-                    <TreeBeard />
+            {allComponents.map(eachComponent =>
+                <div className="border rounded-lg my-10 px-10 py-5">
+                    <h1 className="text-center text-xl font-bold mb-5">{eachComponent?.title}</h1>
+                    {eachComponent?.component}
                 </div>
-                <hr />
-
-                <div className="my-10">
-                    <h1 className="text-center text-xl font-bold">Tree View - Not Clickable </h1>
-                    <TreeView />
-                </div>
-
-                <hr />
-
-                <div className="my-10">
-                    <h1 className="text-center text-xl font-bold">Tree View - Clickable </h1>
-                    <CustomTree />
-                </div>
-                <hr />
-
-            </div>
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Responsive Menu</h1>
-                <BasicDrawer />
-            </div>
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold mb-10">Mini Variant Drawer</h1>
-                <MiniVariantDrawer />
-            </div>
-
-            <div className="my-10">
-                <h1 className="text-center text-xl font-bold">Calendar</h1>
-                <Calendar />
-            </div>
+            )}
         </div>
     );
 };
