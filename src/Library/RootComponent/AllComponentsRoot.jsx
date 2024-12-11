@@ -26,6 +26,7 @@ import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
 import { DateFieldCode } from '../../utils/DateFieldCode';
 import { ShowInputImageCode } from '../../utils/ShowInputImageCode';
+import { AddMoreCode } from '../../utils/AddMoreCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -40,7 +41,7 @@ const allComponents = [
     { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
     { id: 11, title: 'Input Image', component: <ShowInputImage />, codeSnippet: ShowInputImageCode },
     { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput /> },
-    { id: 13, title: 'Add More', component: <AddMore /> },
+    { id: 13, title: 'Add More', component: <AddMore />, codeSnippet: AddMoreCode },
     { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView /> },
     { id: 16, title: 'Tree View - Clickable', component: <CustomTree /> },

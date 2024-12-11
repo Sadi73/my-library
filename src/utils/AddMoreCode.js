@@ -1,3 +1,4 @@
+export const AddMoreCode = `
 import React, { useState } from 'react';
 import { MdRemoveCircle } from 'react-icons/md';
 
@@ -12,7 +13,7 @@ const AddMore = () => {
                     <p>{index + 1}</p>
                     <input
                         className='border-2 p-1 w-96'
-                        name={`choiceList[${index}]`}
+                        name={\`choiceList[\${index}]\`}
                         placeholder='Enter A Text'
                         value={choiceList[index]}
                         onChange={(e) => {
@@ -46,3 +47,4 @@ const AddMore = () => {
 };
 
 export default AddMore;
+`;
