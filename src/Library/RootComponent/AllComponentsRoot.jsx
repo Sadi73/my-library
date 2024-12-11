@@ -25,6 +25,7 @@ import CustomTree from '../TreeView/CustomTree/CustomTree';
 import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
 import { DateFieldCode } from '../../utils/DateFieldCode';
+import { ShowInputImageCode } from '../../utils/ShowInputImageCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -37,7 +38,7 @@ const allComponents = [
     { id: 8, title: 'Number Rating', component: <Rating />, codeSnippet: RatingCode },
     { id: 9, title: 'Date Field', component: <DateField />, codeSnippet: DateFieldCode },
     { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
-    { id: 11, title: 'Input Image', component: <ShowInputImage /> },
+    { id: 11, title: 'Input Image', component: <ShowInputImage />, codeSnippet: ShowInputImageCode },
     { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput /> },
     { id: 13, title: 'Add More', component: <AddMore /> },
     { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
