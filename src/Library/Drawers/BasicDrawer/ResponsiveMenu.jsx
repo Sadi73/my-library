@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 
-const BasicDrawer = () => {
+const ResponsiveMenu = () => {
     const [isDrawerVisible, setIsDrawerVisible] = useState(false);
     const drawerRef = useRef(null);
 
@@ -81,4 +81,4 @@ const BasicDrawer = () => {
     );
 };
 
-export default BasicDrawer;
+export default ResponsiveMenu;

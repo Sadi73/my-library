@@ -8,7 +8,7 @@ import { Tab_2_Code } from '../../utils/Tab_2_Code';
 import Accordion from '../Accordion/Accordion';
 import Calendar from '../Calendar/Calendar';
 import DateField from '../DateField/DateField';
-import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
+import ResponsiveMenu from '../Drawers/BasicDrawer/ResponsiveMenu';
 import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 import AddMore from '../Inputs/AddMore';
 import CustomRadioInput from '../Inputs/CustomRadioInput';
@@ -27,6 +27,7 @@ import TreeView from '../TreeView/Treeview/TreeView';
 import { DateFieldCode } from '../../utils/DateFieldCode';
 import { ShowInputImageCode } from '../../utils/ShowInputImageCode';
 import { AddMoreCode } from '../../utils/AddMoreCode';
+import { ResponsiveMenuBarCode } from '../../utils/ResponsiveMenuBarCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -45,7 +46,7 @@ const allComponents = [
     { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView /> },
     { id: 16, title: 'Tree View - Clickable', component: <CustomTree /> },
-    { id: 17, title: 'Responsive Menu', component: <BasicDrawer /> },
+    { id: 17, title: 'Responsive Menu', component: <ResponsiveMenu />, codeSnippet: ResponsiveMenuBarCode },
     { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer /> },
     { id: 19, title: 'Calendar', component: <Calendar /> },
 ]
