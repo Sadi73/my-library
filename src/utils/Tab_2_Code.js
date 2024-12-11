@@ -1,3 +1,4 @@
+export const Tab_2_Code = `
 
 import React, { useState } from 'react';
 
@@ -73,3 +74,4 @@ const Tab2 = () => {
 };
 
 export default Tab2;
+`;
