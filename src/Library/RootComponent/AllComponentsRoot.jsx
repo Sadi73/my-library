@@ -16,13 +16,14 @@ import LoaderRoot from '../Loader/LoaderRoot';
 import ModalRoot from '../Modals/CustomModal/ModalRoot';
 import SuccessModalRoot from '../Modals/SuccessModal/SuccessModalRoot';
 import ProgressBar from '../ProgressBar/ProgressBar';
-import RatingRoot from '../Rating/RatingRoot';
+import Rating from '../Rating/Rating';
 import Tab1 from '../Tabs/Tab1';
 import Tab2 from '../Tabs/Tab2';
 import SwitchRoot from '../ToggleSwitch/SwitchRoot';
 import CustomTree from '../TreeView/CustomTree/CustomTree';
 import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
+import { RatingCode } from '../../utils/RatingCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -32,7 +33,7 @@ const allComponents = [
     { id: 5, title: 'Tab 2', component: <Tab2 />, codeSnippet: Tab_2_Code },
     { id: 6, title: 'Loader', component: <LoaderRoot /> },
     { id: 7, title: 'Progress Bar', component: <ProgressBar />, codeSnippet: ProgressBarCode },
-    { id: 8, title: 'Number Rating', component: <RatingRoot /> },
+    { id: 8, title: 'Number Rating', component: <Rating />, codeSnippet: RatingCode },
     { id: 9, title: 'Date Field', component: <DateFieldRoot /> },
     { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
     { id: 11, title: 'Input Image', component: <ShowInputImage /> },
