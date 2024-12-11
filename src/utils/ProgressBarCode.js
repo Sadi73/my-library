@@ -1,3 +1,4 @@
+export const ProgressBarCode = `
 import React, { useState } from 'react';
 
 const styles = {
@@ -48,3 +49,5 @@ const ProgressBar = () => {
 };
 
 export default ProgressBar;
+
+`;

@@ -1,27 +1,28 @@
 import React from 'react';
-import Accordion from '../Accordion/Accordion';
-import ModalRoot from '../Modals/CustomModal/ModalRoot';
-import SuccessModalRoot from '../Modals/SuccessModal/SuccessModalRoot';
-import Tab1 from '../Tabs/Tab1';
-import Tab2 from '../Tabs/Tab2';
-import LoaderRoot from '../Loader/LoaderRoot';
-import ProgressBarRoot from '../ProgressBar/ProgressBarRoot';
-import RatingRoot from '../Rating/RatingRoot';
-import DateFieldRoot from '../DateField/DateFieldRoot';
-import SwitchRoot from '../ToggleSwitch/SwitchRoot';
-import ShowInputImage from '../Inputs/ShowInputImage';
-import CustomRadioInput from '../Inputs/CustomRadioInput';
-import AddMore from '../Inputs/AddMore';
-import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
-import TreeView from '../TreeView/Treeview/TreeView';
-import CustomTree from '../TreeView/CustomTree/CustomTree';
-import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
-import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
-import Calendar from '../Calendar/Calendar';
-import { AccordionCodeSnippet } from '../../utils/AccordionCode';
 import ShowCodeContainer from '../../NecessaryComponents/ShowCodeContainer';
+import { AccordionCodeSnippet } from '../../utils/AccordionCode';
+import { ProgressBarCode } from '../../utils/ProgressBarCode';
 import { Tab_1_Code } from '../../utils/Tab_1_Code';
 import { Tab_2_Code } from '../../utils/Tab_2_Code';
+import Accordion from '../Accordion/Accordion';
+import Calendar from '../Calendar/Calendar';
+import DateFieldRoot from '../DateField/DateFieldRoot';
+import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
+import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
+import AddMore from '../Inputs/AddMore';
+import CustomRadioInput from '../Inputs/CustomRadioInput';
+import ShowInputImage from '../Inputs/ShowInputImage';
+import LoaderRoot from '../Loader/LoaderRoot';
+import ModalRoot from '../Modals/CustomModal/ModalRoot';
+import SuccessModalRoot from '../Modals/SuccessModal/SuccessModalRoot';
+import ProgressBar from '../ProgressBar/ProgressBar';
+import RatingRoot from '../Rating/RatingRoot';
+import Tab1 from '../Tabs/Tab1';
+import Tab2 from '../Tabs/Tab2';
+import SwitchRoot from '../ToggleSwitch/SwitchRoot';
+import CustomTree from '../TreeView/CustomTree/CustomTree';
+import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
+import TreeView from '../TreeView/Treeview/TreeView';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -30,7 +31,7 @@ const allComponents = [
     { id: 4, title: 'Tab 1', component: <Tab1 />, codeSnippet: Tab_1_Code },
     { id: 5, title: 'Tab 2', component: <Tab2 />, codeSnippet: Tab_2_Code },
     { id: 6, title: 'Loader', component: <LoaderRoot /> },
-    { id: 7, title: 'Progress Bar', component: <ProgressBarRoot /> },
+    { id: 7, title: 'Progress Bar', component: <ProgressBar />, codeSnippet: ProgressBarCode },
     { id: 8, title: 'Number Rating', component: <RatingRoot /> },
     { id: 9, title: 'Date Field', component: <DateFieldRoot /> },
     { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
