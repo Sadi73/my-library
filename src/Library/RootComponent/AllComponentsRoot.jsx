@@ -20,12 +20,13 @@ import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 import Calendar from '../Calendar/Calendar';
 import { AccordionCodeSnippet } from '../../utils/AccordionCode';
 import ShowCodeContainer from '../../NecessaryComponents/ShowCodeContainer';
+import { Tab_1_Code } from '../../utils/Tab_1_Code';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
     { id: 2, title: 'Modal', component: <ModalRoot /> },
     { id: 3, title: 'SuccessModal', component: <SuccessModalRoot /> },
-    { id: 4, title: 'Tab 1', component: <Tab1 /> },
+    { id: 4, title: 'Tab 1', component: <Tab1 />, codeSnippet: Tab_1_Code },
     { id: 5, title: 'Tab 2', component: <Tab2 /> },
     { id: 6, title: 'Loader', component: <LoaderRoot /> },
     { id: 7, title: 'Progress Bar', component: <ProgressBarRoot /> },
