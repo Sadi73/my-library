@@ -2,11 +2,12 @@ import React from 'react';
 import ShowCodeContainer from '../../NecessaryComponents/ShowCodeContainer';
 import { AccordionCodeSnippet } from '../../utils/AccordionCode';
 import { ProgressBarCode } from '../../utils/ProgressBarCode';
+import { RatingCode } from '../../utils/RatingCode';
 import { Tab_1_Code } from '../../utils/Tab_1_Code';
 import { Tab_2_Code } from '../../utils/Tab_2_Code';
 import Accordion from '../Accordion/Accordion';
 import Calendar from '../Calendar/Calendar';
-import DateFieldRoot from '../DateField/DateFieldRoot';
+import DateField from '../DateField/DateField';
 import BasicDrawer from '../Drawers/BasicDrawer/BasicDrawer';
 import MiniVariantDrawer from '../Drawers/BasicDrawer/MiniVariantDrawer';
 import AddMore from '../Inputs/AddMore';
@@ -23,7 +24,7 @@ import SwitchRoot from '../ToggleSwitch/SwitchRoot';
 import CustomTree from '../TreeView/CustomTree/CustomTree';
 import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
-import { RatingCode } from '../../utils/RatingCode';
+import { DateFieldCode } from '../../utils/DateFieldCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -34,7 +35,7 @@ const allComponents = [
     { id: 6, title: 'Loader', component: <LoaderRoot /> },
     { id: 7, title: 'Progress Bar', component: <ProgressBar />, codeSnippet: ProgressBarCode },
     { id: 8, title: 'Number Rating', component: <Rating />, codeSnippet: RatingCode },
-    { id: 9, title: 'Date Field', component: <DateFieldRoot /> },
+    { id: 9, title: 'Date Field', component: <DateField />, codeSnippet: DateFieldCode },
     { id: 10, title: 'Toggle Switch', component: <SwitchRoot /> },
     { id: 11, title: 'Input Image', component: <ShowInputImage /> },
     { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput /> },

@@ -1,3 +1,4 @@
+export const DateFieldCode = `
 import React, { useState, useEffect } from 'react';
 
 const formatDate = (date) => {
@@ -24,7 +25,7 @@ const DateField = ({ startYear = 1900, endYear = 2050 }) => {
         };
 
         setLocalCurrentDate(updatedDate);
-        const formattedDate = `${updatedDate.year}-${String(updatedDate.month).padStart(2, '0')}-${String(updatedDate.day).padStart(2, '0')}`;
+        const formattedDate = \`\${updatedDate.year}-\${String(updatedDate.month).padStart(2, '0')}-\${String(updatedDate.day).padStart(2, '0')}\`;
         setSelectedDate(formattedDate);
     };
 
@@ -70,3 +71,5 @@ const DateField = ({ startYear = 1900, endYear = 2050 }) => {
 };
 
 export default DateField;
+
+`;
