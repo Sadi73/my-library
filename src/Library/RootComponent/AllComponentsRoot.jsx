@@ -28,6 +28,8 @@ import { DateFieldCode } from '../../utils/DateFieldCode';
 import { ShowInputImageCode } from '../../utils/ShowInputImageCode';
 import { AddMoreCode } from '../../utils/AddMoreCode';
 import { ResponsiveMenuBarCode } from '../../utils/ResponsiveMenuBarCode';
+import { MiniVariantDrawerCode } from '../../utils/MiniVariantDrawerCode';
+import { CalendarCode } from '../../utils/CalendarCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -47,8 +49,8 @@ const allComponents = [
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView /> },
     { id: 16, title: 'Tree View - Clickable', component: <CustomTree /> },
     { id: 17, title: 'Responsive Menu', component: <ResponsiveMenu />, codeSnippet: ResponsiveMenuBarCode },
-    { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer /> },
-    { id: 19, title: 'Calendar', component: <Calendar /> },
+    { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer />, codeSnippet: MiniVariantDrawerCode },
+    { id: 19, title: 'Calendar', component: <Calendar /> , codeSnippet: CalendarCode},
 ]
 
 const AllComponentsRoot = () => {
