@@ -14,7 +14,7 @@ const ShowCodeContainer = ({ codeSnippet }) => {
                 </button>
             </div>
             {showCode &&
-                <pre className='p-3  mt-2 rounded max-h-96 overflow-auto bg-[#0B1120] text-white'>
+                <pre className='p-3 mt-2 text-sm rounded max-h-96 overflow-auto bg-[#0B1120] text-white'>
                     <code>{codeSnippet}</code>
                 </pre>
             }
