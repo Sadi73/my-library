@@ -1,3 +1,4 @@
+export const ModalStyles = `
 
 /* The Modal (background) */
 .response-modal {
@@ -108,3 +109,4 @@
         border: none;
     }
 }
+`

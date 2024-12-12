@@ -40,10 +40,12 @@ import { TreeViewStyles } from '../../utils/TreeViewStyles';
 import { CustomTreeCode } from '../../utils/CustomTreeCode';
 import { CustomTreeStyles } from '../../utils/CustomTreeStyles';
 import { TreeBeardCode } from '../../utils/TreeBeardCode';
+import { ModalCode } from '../../utils/ModalCode';
+import { ModalStyles } from '../../utils/ModalStyles';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
-    { id: 2, title: 'Modal', component: <ModalRoot /> },
+    { id: 2, title: 'Modal', component: <ModalRoot />, hasCssFile: true, codeSnippet: ModalCode, cssCodeSnippet: ModalStyles },
     { id: 3, title: 'SuccessModal', component: <SuccessModalRoot /> },
     { id: 4, title: 'Tab 1', component: <Tab1 />, codeSnippet: Tab_1_Code },
     { id: 5, title: 'Tab 2', component: <Tab2 />, codeSnippet: Tab_2_Code },
