@@ -1,24 +1,23 @@
+export const SwitchCode = `
 import React, { useState } from 'react';
 import './Switch.css'
 
-const SwitchRoot = () => {
+const Switch = () => {
 
     const [checkboxHandler, setCheckboxHandler] = useState(false)
 
     return (
-        <div style={{ display: 'flex', gap: '10px' }}>
+        <div className='flex items-center gap-2'>
             <div className="switchContainer">
                 <input type="checkbox" className="checkbox" id="checkbox" onChange={() => setCheckboxHandler(!checkboxHandler)} />
                 <label className="switch" htmlFor="checkbox">
                     <span className="slider"></span>
                 </label>
             </div>
-            <div>Required</div>
-            <div>
-                <a href='https://uiverse.io/switches' target='_blank' className='text-blue-700'>For more switch...</a>
-            </div>
+            <h3>Required</h3>
         </div>
     );
 };
 
-export default SwitchRoot;
+export default Switch;
+`
