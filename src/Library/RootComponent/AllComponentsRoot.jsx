@@ -33,6 +33,8 @@ import CustomTree from '../TreeView/CustomTree/CustomTree';
 import TreeBeard from '../TreeView/TreeBeard/TreeBeard';
 import TreeView from '../TreeView/Treeview/TreeView';
 import { SwitchStyles } from '../../utils/SwitchStyles';
+import { RadioInputCode } from '../../utils/RadioInputCode';
+import { RadioInputStyles } from '../../utils/RadioInputStyles';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -46,7 +48,7 @@ const allComponents = [
     { id: 9, title: 'Date Field', component: <DateField />, codeSnippet: DateFieldCode },
     { id: 10, title: 'Toggle Switch', component: <Switch />, hasCssFile: true, codeSnippet: SwitchCode, cssCodeSnippet: SwitchStyles },
     { id: 11, title: 'Input Image', component: <ShowInputImage />, codeSnippet: ShowInputImageCode },
-    { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput /> },
+    { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput />, hasCssFile: true, codeSnippet: RadioInputCode, cssCodeSnippet: RadioInputStyles },
     { id: 13, title: 'Add More', component: <AddMore />, codeSnippet: AddMoreCode },
     { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView /> },

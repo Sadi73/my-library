@@ -1,4 +1,4 @@
-
+export const RadioInputStyles = `
 .radio {
     width: 0;
     height: 0;
@@ -11,3 +11,4 @@
     background-color: #EC4747;
     width: 30px;
 }
+`

@@ -1,3 +1,4 @@
+export const RadioInputCode = `
 import React from 'react';
 import './CustomRadioInput.css'
 
@@ -16,3 +17,4 @@ const CustomRadioInput = () => {
 };
 
 export default CustomRadioInput;
+`
