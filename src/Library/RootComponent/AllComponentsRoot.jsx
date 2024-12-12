@@ -37,6 +37,8 @@ import { RadioInputCode } from '../../utils/RadioInputCode';
 import { RadioInputStyles } from '../../utils/RadioInputStyles';
 import { TreeViewCode } from '../../utils/TreeViewCode';
 import { TreeViewStyles } from '../../utils/TreeViewStyles';
+import { CustomTreeCode } from '../../utils/CustomTreeCode';
+import { CustomTreeStyles } from '../../utils/CustomTreeStyles';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -54,7 +56,7 @@ const allComponents = [
     { id: 13, title: 'Add More', component: <AddMore />, codeSnippet: AddMoreCode },
     { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView />, hasCssFile: true, codeSnippet: TreeViewCode, cssCodeSnippet: TreeViewStyles },
-    { id: 16, title: 'Tree View - Clickable', component: <CustomTree /> },
+    { id: 16, title: 'Tree View - Clickable', component: <CustomTree />, hasCssFile: true, codeSnippet: CustomTreeCode, cssCodeSnippet: CustomTreeStyles },
     { id: 17, title: 'Responsive Menu', component: <ResponsiveMenu />, codeSnippet: ResponsiveMenuBarCode },
     { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer />, codeSnippet: MiniVariantDrawerCode },
     { id: 19, title: 'Calendar', component: <Calendar />, codeSnippet: CalendarCode },

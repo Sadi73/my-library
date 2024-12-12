@@ -1,3 +1,4 @@
+export const CustomTreeStyles = `
 .tree1 {
 	text-align: center;
 	overflow-x: auto;
@@ -80,3 +81,5 @@
 	font-weight: 500;
 }
 
+
+`

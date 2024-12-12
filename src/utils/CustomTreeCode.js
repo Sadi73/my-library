@@ -1,3 +1,4 @@
+export const CustomTreeCode = `
 import React, { useState } from 'react';
 import './CustomTree.css';
 
@@ -239,3 +240,4 @@ const CustomTree = () => {
 };
 
 export default CustomTree;
+`
