@@ -1,3 +1,4 @@
+export const TreeViewStyles = `
 .tree {
 	text-align: center;
 	overflow-x: auto;
@@ -94,3 +95,4 @@
 	letter-spacing: 1px;
 	font-weight: 500;
 }
+`
