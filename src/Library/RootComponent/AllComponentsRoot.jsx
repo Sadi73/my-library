@@ -39,6 +39,7 @@ import { TreeViewCode } from '../../utils/TreeViewCode';
 import { TreeViewStyles } from '../../utils/TreeViewStyles';
 import { CustomTreeCode } from '../../utils/CustomTreeCode';
 import { CustomTreeStyles } from '../../utils/CustomTreeStyles';
+import { TreeBeardCode } from '../../utils/TreeBeardCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -54,13 +55,13 @@ const allComponents = [
     { id: 11, title: 'Input Image', component: <ShowInputImage />, codeSnippet: ShowInputImageCode },
     { id: 12, title: 'Radio input Custom Style', component: <CustomRadioInput />, hasCssFile: true, codeSnippet: RadioInputCode, cssCodeSnippet: RadioInputStyles },
     { id: 13, title: 'Add More', component: <AddMore />, codeSnippet: AddMoreCode },
-    { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard /> },
+    { id: 14, title: 'Tree View (Tree Beard)', component: <TreeBeard />, codeSnippet: TreeBeardCode },
     { id: 15, title: 'Tree View - Not Clickable', component: <TreeView />, hasCssFile: true, codeSnippet: TreeViewCode, cssCodeSnippet: TreeViewStyles },
     { id: 16, title: 'Tree View - Clickable', component: <CustomTree />, hasCssFile: true, codeSnippet: CustomTreeCode, cssCodeSnippet: CustomTreeStyles },
     { id: 17, title: 'Responsive Menu', component: <ResponsiveMenu />, codeSnippet: ResponsiveMenuBarCode },
     { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer />, codeSnippet: MiniVariantDrawerCode },
     { id: 19, title: 'Calendar', component: <Calendar />, codeSnippet: CalendarCode },
-]
+];
 
 const AllComponentsRoot = () => {
     return (
