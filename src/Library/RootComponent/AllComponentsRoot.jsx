@@ -44,6 +44,8 @@ import { ModalCode } from '../../utils/ModalCode';
 import { ModalStyles } from '../../utils/ModalStyles';
 import RecursiveRendering from '../RecursiveRendering/RecursiveRendering';
 import { RecursiveRenderingCode } from '../../utils/RecursiveRenderingCode';
+import Dragable from '../Dragable/Dragable';
+import { DragableBlockCode } from '../../utils/DragableBlockCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -66,6 +68,7 @@ const allComponents = [
     { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer />, codeSnippet: MiniVariantDrawerCode },
     { id: 19, title: 'Calendar', component: <Calendar />, codeSnippet: CalendarCode },
     { id: 20, title: 'Recursive Rendering', component: <RecursiveRendering />, codeSnippet: RecursiveRenderingCode },
+    { id: 21, title: 'Dragable Block', component: <Dragable />, codeSnippet: DragableBlockCode },
 ];
 
 const AllComponentsRoot = () => {
