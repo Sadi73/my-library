@@ -46,6 +46,9 @@ import RecursiveRendering from '../RecursiveRendering/RecursiveRendering';
 import { RecursiveRenderingCode } from '../../utils/RecursiveRenderingCode';
 import Dragable from '../Dragable/Dragable';
 import { DragableBlockCode } from '../../utils/DragableBlockCode';
+import ColorPickerProject from '../ColorPicker/ColorPickerProject';
+import PentagonColorPicker from '../ColorPicker/PentagonColorPicker';
+import { PentagonColorPickerCode } from '../../utils/PentagonColorPickerCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -69,6 +72,7 @@ const allComponents = [
     { id: 19, title: 'Calendar', component: <Calendar />, codeSnippet: CalendarCode },
     { id: 20, title: 'Recursive Rendering', component: <RecursiveRendering />, codeSnippet: RecursiveRenderingCode },
     { id: 21, title: 'Dragable Block', component: <Dragable />, codeSnippet: DragableBlockCode },
+    { id: 22, title: 'Color Picker', component: <PentagonColorPicker />, codeSnippet: PentagonColorPickerCode },
 ];
 
 const AllComponentsRoot = () => {
