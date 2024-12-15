@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeftSideBar = () => {
     return (
-        <div className="sideBar h-[90vh] border-r-2 rounded p-5 sticky top-10 space-y-3">
+        <div className="sideBar h-[90vh] border-r-2 rounded p-5 sticky top-10 space-y-3 overflow-auto">
             <h1 className='lg:text-xl font-bold text-center'>Component List</h1>
             <p className='font-light'>Accordion</p>
             <p className='font-light'>Modal</p>
@@ -19,6 +19,9 @@ const LeftSideBar = () => {
             <p className='font-light'>Tree Structure</p>
             <p className='font-light'>Drawers</p>
             <p className='font-light'>Calendar</p>
+            <p className='font-light'>Recursive Rendering</p>
+            <p className='font-light'>Dragable Block</p>
+            <p className='font-light'>Color Picker</p>
         </div>
     );
 };
