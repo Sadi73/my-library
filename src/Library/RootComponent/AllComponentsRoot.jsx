@@ -42,6 +42,8 @@ import { CustomTreeStyles } from '../../utils/CustomTreeStyles';
 import { TreeBeardCode } from '../../utils/TreeBeardCode';
 import { ModalCode } from '../../utils/ModalCode';
 import { ModalStyles } from '../../utils/ModalStyles';
+import RecursiveRendering from '../RecursiveRendering/RecursiveRendering';
+import { RecursiveRenderingCode } from '../../utils/RecursiveRenderingCode';
 
 const allComponents = [
     { id: 1, title: 'Accordion', component: <Accordion />, codeSnippet: AccordionCodeSnippet },
@@ -63,6 +65,7 @@ const allComponents = [
     { id: 17, title: 'Responsive Menu', component: <ResponsiveMenu />, codeSnippet: ResponsiveMenuBarCode },
     { id: 18, title: 'Mini Variant Drawer', component: <MiniVariantDrawer />, codeSnippet: MiniVariantDrawerCode },
     { id: 19, title: 'Calendar', component: <Calendar />, codeSnippet: CalendarCode },
+    { id: 20, title: 'Recursive Rendering', component: <RecursiveRendering />, codeSnippet: RecursiveRenderingCode },
 ];
 
 const AllComponentsRoot = () => {
