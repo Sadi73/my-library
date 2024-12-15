@@ -46,7 +46,6 @@ import RecursiveRendering from '../RecursiveRendering/RecursiveRendering';
 import { RecursiveRenderingCode } from '../../utils/RecursiveRenderingCode';
 import Dragable from '../Dragable/Dragable';
 import { DragableBlockCode } from '../../utils/DragableBlockCode';
-import ColorPickerProject from '../ColorPicker/ColorPickerProject';
 import PentagonColorPicker from '../ColorPicker/PentagonColorPicker';
 import { PentagonColorPickerCode } from '../../utils/PentagonColorPickerCode';
 

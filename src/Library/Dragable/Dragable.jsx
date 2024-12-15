@@ -1,25 +1,36 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
-const getRandomPosition = () => ({
-    x: Math.floor(Math.random() * window.innerWidth * 0.8),
-    y: Math.floor(Math.random() * window.innerHeight * 0.8),
+const getRandomPosition = (containerWidth, containerHeight) => ({
+    x: Math.floor(Math.random() * (containerWidth - 100)), // Subtract block width
+    y: Math.floor(Math.random() * (containerHeight - 100)), // Subtract block height
 });
 
 const Dragable = () => {
-    const [blocks, setBlocks] = useState([
-        { id: 1, position: getRandomPosition(), parentId: null },
-    ]);
+    const [blocks, setBlocks] = useState([]);
     const containerRef = useRef(null);
 
+    // Set the initial block with random position when the component mounts
+    useEffect(() => {
+        if (containerRef.current) {
+            const { offsetWidth, offsetHeight } = containerRef.current;
+            setBlocks([
+                { id: 1, position: getRandomPosition(offsetWidth, offsetHeight), parentId: null },
+            ]);
+        }
+    }, []);
+
     const addBlock = (parentId) => {
-        setBlocks((prevBlocks) => [
-            ...prevBlocks,
-            {
-                id: Date.now(),
-                position: getRandomPosition(),
-                parentId,
-            },
-        ]);
+        if (containerRef.current) {
+            const { offsetWidth, offsetHeight } = containerRef.current;
+            setBlocks((prevBlocks) => [
+                ...prevBlocks,
+                {
+                    id: Date.now(),
+                    position: getRandomPosition(offsetWidth, offsetHeight),
+                    parentId,
+                },
+            ]);
+        }
     };
 
     const handleDragStart = (id, event) => {
@@ -31,13 +42,27 @@ const Dragable = () => {
             const newX = e.clientX - offsetX;
             const newY = e.clientY - offsetY;
 
-            setBlocks((prevBlocks) =>
-                prevBlocks.map((b) =>
-                    b.id === id
-                        ? { ...b, position: { x: newX, y: newY } }
-                        : b
-                )
-            );
+            if (containerRef.current) {
+                const { offsetWidth, offsetHeight } = containerRef.current;
+
+                // Ensure the block stays within the container
+                const boundedX = Math.max(
+                    0,
+                    Math.min(newX, offsetWidth - 100) // Block width = 100
+                );
+                const boundedY = Math.max(
+                    0,
+                    Math.min(newY, offsetHeight - 100) // Block height = 100
+                );
+
+                setBlocks((prevBlocks) =>
+                    prevBlocks.map((b) =>
+                        b.id === id
+                            ? { ...b, position: { x: boundedX, y: boundedY } }
+                            : b
+                    )
+                );
+            }
         };
 
         const handleMouseUp = () => {
@@ -78,18 +103,16 @@ const Dragable = () => {
     return (
         <div
             ref={containerRef}
-            className="relative overflow-hidden w-screen h-screen"
+            className="relative overflow-hidden w-full h-[500px] border border-gray-400"
         >
-            <svg
-                className="absolute top-0 left-0 w-full h-full z-0"
-            >
+            <svg className="absolute top-0 left-0 w-full h-full z-0">
                 {renderLines()}
             </svg>
-            
+
             {blocks.map((block) => (
                 <div
                     key={block.id}
-                    className={`absolute w-24 h-24 bg-blue-300 border border-blue-500 rounded-md flex items-center justify-center cursor-move z-10`}
+                    className="absolute w-24 h-24 bg-blue-300 border border-blue-500 rounded-md flex items-center justify-center cursor-move z-10"
                     onMouseDown={(e) => handleDragStart(block.id, e)}
                     style={{
                         left: block.position.x,
